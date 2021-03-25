@@ -1,0 +1,35 @@
+.footer {
+  position: relative;
+
+  background-color: $dark;
+
+  & .navigation {
+    margin-bottom: 0;
+
+    @media (max-width: $xm) {
+      justify-content: center;
+      
+      padding: 4rem 0;
+    }
+  }
+
+  & .navigation__main-menu {
+    @media (max-width: $xm) {
+      top: 110px;
+
+      display: flex;
+      justify-content: space-between;
+
+      padding-top: 0;
+      padding-bottom: 4.5rem;
+      height: 24rem;
+    }
+  }
+
+  & .navigation__item {
+    @media (max-width: $xm) {
+      margin-bottom: 0;
+    }
+  }
+}
+

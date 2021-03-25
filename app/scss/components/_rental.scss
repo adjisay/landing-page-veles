@@ -1,0 +1,184 @@
+.rental {
+  &-terrain {
+    position: relative;
+
+    margin-bottom: 16.5rem;
+
+    @media (max-width: $xm) {
+      margin-bottom: 12rem;
+    }
+
+    & > .container {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 1110px) {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &__description {
+      padding-top: 15.5rem;
+      margin-right: 1.5rem;
+
+      @media (max-width: $xm) {
+        margin-right: 0;
+        padding-top: 26.8rem;
+      }
+    }
+  
+    &__title {
+      margin-bottom: 2.5rem;
+  
+      font-family: $bold;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: $black;
+
+      @media (max-width: $xm) {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        text-align: center;
+      }
+    }
+  
+    &__text {
+      margin-bottom: 4rem;
+      max-width: 43rem;
+  
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      color: $dark;
+
+      @media (max-width: $xm) {
+        max-width: 100%;
+
+        text-align: center;
+      }
+    }
+  
+    &__image-wrapper {
+      @media (max-width: $xm) {
+        position: absolute;
+        top: 0;
+
+        width: 28.8rem;
+        max-width: 100%;
+      }
+    }
+  
+    &__image {
+      box-shadow: -6rem -6rem 0 #F1F2F5;
+
+      @media (max-width: 1110px) {
+        box-shadow: none;
+      }
+    }
+  }
+  
+  &-warehouse {
+    margin-bottom: 10rem;
+    padding-top: 3.3rem;
+    padding-bottom: 11rem;
+
+    color: $white;
+
+    background-color: $dark;
+
+    @media (max-width: $xm) {
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 3.5rem;
+    }
+    
+    & > .container {
+      position: relative;
+
+      display: flex;
+      align-items: flex-end;
+    }
+
+    &__description {
+      margin-right: 2.5rem;
+      padding-top: 17.2rem;
+
+      @media (max-width: $xm) {
+        margin-right: 0;
+        padding-top: 23rem;
+      }
+    }
+
+    &__title {
+      margin-bottom: 3rem;
+  
+      font-family: $bold;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+
+      @media (max-width: $xm) {
+        margin-bottom: 2rem;
+
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      margin-bottom: 4rem;
+      max-width: 49.5rem;
+  
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+
+      @media (max-width: $xm) {
+        max-width: 100%;
+
+        text-align: center;
+      }
+    }
+
+    &__button {
+      border: 1px solid $white;
+    }
+
+    &__image-wrapper {
+      position: absolute;
+      bottom: -20rem;
+      right: -30rem;
+
+      @media (min-width: $xm) and (max-width: 1835px) {
+        position: static;
+      }
+
+      @media (max-width: $xm) {
+        top: -4rem;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+
+        transform: translateX(-50%);
+
+        width: 28.8rem;
+        max-width: 100%;
+      }
+    }
+    
+    &__image {
+      width: 100%;
+      max-height: 57rem;
+
+      object-fit: cover;
+
+      @media (max-width: $xm) {
+        height: 25rem;
+      }
+    }
+  }
+  
+}

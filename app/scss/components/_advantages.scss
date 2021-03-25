@@ -1,0 +1,112 @@
+.advantages {
+  margin-bottom: 6.5rem;
+  padding-top: 10rem;
+
+  font-family: $semibold;
+
+  background-color: $white;
+
+  @media (max-width: $xs) {
+    padding-top: 6rem;
+  }
+
+  &__title {
+    margin-bottom: 8rem;
+
+    @media (max-width: $xs) {
+      margin-bottom: 3rem;
+
+      font-size: 2rem;
+      line-height: 2.3rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    max-width: 100rem;
+    width: 100%;
+
+    @media (max-width: $xm) {
+      justify-content: space-evenly;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+   
+    margin-bottom: 8.5rem;
+    max-width: 27rem;
+    width: 100%;
+
+    &::before {
+      content: '1';
+      position: absolute;
+      top: -6.5rem;
+      left: 9rem;
+
+      font-family: $semibold;
+      font-size: 8rem;
+      line-height: 9.4rem;
+      color: rgba($black, 0.15);
+
+      @media (max-width: $xs) {
+        font-size: 0;
+      }
+    }
+
+    @include pseudo-text(2);
+    @include pseudo-text(3);
+    @include pseudo-text(4);
+    @include pseudo-text(5);
+    @include pseudo-text(6);
+    @include pseudo-text(7);
+    @include pseudo-text(8);
+    @include pseudo-text(9);
+
+    @media (max-width: $xs) {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 5rem;
+    height: 5rem;
+    margin-right: 4rem;
+
+    font-size: 2rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.3rem;
+    color: $dark;
+    text-transform: uppercase;
+
+    background-color: $yellow;
+  }
+
+  &__description {
+    max-width: 18rem;
+
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $dark;
+
+    @media (max-width: 280px) {
+      width: 100%;
+      margin-bottom: 0;
+
+      font-size: 1rem;
+    }
+  }
+}
+

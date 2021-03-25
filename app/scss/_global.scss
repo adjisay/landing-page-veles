@@ -1,0 +1,114 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+
+  font-size: 62.5%; // 10px
+}
+
+body {
+  max-width: 100%;
+  width: 100%;
+
+  font-family: $regular;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: $black;
+
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 120rem;
+  width: 100%;
+}
+
+.services .container {
+  max-width: 125rem;
+  padding: 0 1.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: $black;
+  text-align: center;
+}
+
+.btn-modal {
+  padding: 2rem 3rem;
+
+  font-family: $bold;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: $white;
+
+  transition: all .15s linear;
+
+  background-color: $dark;
+  border: 1px solid $dark;
+
+  @media (max-width: $xm) {
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    color: $dark;
+
+    background-color: $yellow;
+    border: 1px solid $dark;
+  }
+}
+
+.visually-hidden:not(:active):not(:focus),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
